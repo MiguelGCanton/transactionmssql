@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .container{
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        grid-template-rows: 25% auto 30%;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: 
+            "header header header"
+            "sidebar  form form"
+            "footer footer footer";
+    }
+    form{
+        grid-area: form;
+        display:grid;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "listaProductos"
+        "idCliente";     
+    }
+
+    .listaProductos{
+        grid-area: listaProductos;
+    }
+    .idCliente{
+        grid-area: idCliente;
+
+    }
+
+    .item-a{
+        grid-area: header;
+        background: gray;
+    }
+
+    .item-c{
+        grid-area: footer;
+        background: blue;
+    }
+    .item-b{
+        grid-area: sidebar;
+        background: red;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-a"></div>
+        <div class="item-b"></div>
+        <div class="item-c"></div>
+        <form action="buy.php" method="post">
+            <div class="listaProductos">
+                <label for="shoppingList">lista de productos</label>
+                <input type="text" name="shoppinList" id="">
+            </div>
+            <div class="idCliente">
+                <label for="customerId">id del cliente</label>
+                <input type="text" name="customerId" id="">
+            </div>
+        </form>
+    </div> 
+</body>
+</html>
