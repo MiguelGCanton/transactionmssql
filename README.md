@@ -2,7 +2,7 @@
 Actividad de agregar una compra a la base de datos adventureWorks2012, usando una api rest con php y usando transacciones
 
 
-##instalacion 
+#instalacion 
 
 aniadir en el archivo php.ini
 
@@ -17,7 +17,7 @@ en la carpeta C:\xampp\php\ext
 
 despues reiniciar el servidor
 
-##estructura de la api rest
+#estructura de la api rest
 
 recibe como parametros
 
@@ -27,7 +27,7 @@ customerId de tipo entero
 lista con los productos a comprar con esta estructura:
 'IDPRODUCTO1,CANTIDAD|IID-PRODUCTO2,2|...' Ej. '814,5|818,1'
 
-##pruebas realizadas con los siguientes registros
+#pruebas realizadas con los siguientes registros
 
 customerId = 29825
 lista = 776,1|776,2|776,3
